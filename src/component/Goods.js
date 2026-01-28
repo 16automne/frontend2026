@@ -53,7 +53,7 @@ export default function Goods(props){
   const deleteDate =(g_code)=> {
     if(window.confirm('정말 삭제?')){
       axios // 서버에 delete요청 전송
-        .delete(`http://localhost:9070/goods/${g_code}`)
+        .delete(`https://port-0-backend2026-mkumigxw608a3e4b.sel3.cloudtype.app/goods/${g_code}`)
         .then(()=>{ // 성공일 때 실행
           alert('데이터 삭제 성공');
           loadData(); //데이터 삭제 완료시 목록 재갱신
@@ -146,3 +146,4 @@ export default function Goods(props){
   );
 
 };
+
