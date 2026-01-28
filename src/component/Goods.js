@@ -36,7 +36,7 @@ export default function Goods(props){
 
   // 1. 상품 리스트 조회(출력)
   const loadData=()=>{
-    axios.get('http://localhost:9070/goods')
+    axios.get('https://port-0-backend2026-mkumigxw608a3e4b.sel3.cloudtype.app/goods')
     // 성공시 데이터를 저장
     .then(res=>{
       setData(res.data);
@@ -144,4 +144,5 @@ export default function Goods(props){
 
     </main>
   );
+
 };
